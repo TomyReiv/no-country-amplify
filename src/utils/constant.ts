@@ -1,7 +1,7 @@
 import dotenv from "dotenv";
 dotenv.config();
 
-export const port: string | undefined = process.env.PORT;
+export const port: string | undefined = process.env.PORT || 8080;
 export const db: string = process.env.DB || "";
 export const jwtKey: string = process.env.JWT_KEY || "";
 export const secretKey: string = process.env.JWT_SECRET || "";
