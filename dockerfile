@@ -2,7 +2,7 @@
 FROM node:18.17.1
 
 # Set the working directory in the container
-WORKDIR /usr/src/app
+WORKDIR /usr/src/index
 
 # Copy package.json and package-lock.json
 COPY package*.json ./
@@ -20,4 +20,4 @@ RUN npm run build
 EXPOSE 3000
 
 # Command to run the application
-CMD ["node", "dist/app.js"]
+CMD ["node", "dist/index.js"]
